@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Build no-XXX test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="68.701">
+  <properties />
+  
+  
+            <testcase name="RegisteredUserLogin" time="31.127" classname="com.exclusively.web.login.Exclusively_Login" />
+                <testcase name="UserRegistration" time="37.574" classname="com.exclusively.web.login.Exclusively_Login" />
+      
+</testsuite>

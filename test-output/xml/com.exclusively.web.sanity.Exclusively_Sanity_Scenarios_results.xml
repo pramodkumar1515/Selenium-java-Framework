@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Build no-XXX test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="174.506">
+  <properties />
+  
+  
+            <testcase name="guestUserCheckOutflow" time="94.155" classname="com.exclusively.web.sanity.Exclusively_Sanity_Scenarios" />
+                <testcase name="placeOrderRegisterUserbyurl" time="80.351" classname="com.exclusively.web.sanity.Exclusively_Sanity_Scenarios" />
+      
+</testsuite>

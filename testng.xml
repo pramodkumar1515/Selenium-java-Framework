@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Exclusively_TestSuite" >
+  <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+       <listener class-name="com.exclusively.web.common.DynamicallyRunTestCases" /> 
+      <listener class-name="com.exclusively.web.common.TestListener" /> 
+      <listener class-name="com.exclusively.web.common.ExecutionListener" /> 
+       <!-- <listener class-name="com.digi.selenium.util.common.GroupRunnerListner" />-->    
+  </listeners>
+   <test name="Build no-XXX test"> 	
+        <classes> 
+      		 <!-- Add the TestClasses -->
+         
+           <!-- Sanity test Cases -->
+     
+           
+            <!-- Registration test Cases-->
+	         <class name="com.exclusively.web.login.Exclusively_Login" />
+	         <class name="com.exclusively.web.sanity.Exclusively_Sanity_Scenarios" />
+	         
+	         
+		</classes>        
+   </test>
+</suite>

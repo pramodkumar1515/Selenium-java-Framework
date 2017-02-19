@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Exclusively_TestSuite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.exclusively.web.common.DynamicallyRunTestCases"/>
+    <listener class-name="com.exclusively.web.common.TestListener"/>
+    <listener class-name="com.exclusively.web.common.ExecutionListener"/>
+  </listeners>
+  <test name="Build no-XXX test(failed)">
+    <classes>
+      <class name="com.exclusively.web.sanity.Exclusively_Sanity_Scenarios">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="guestUserCheckOutflow"/>
+          <include name="initDriver"/>
+        </methods>
+      </class> <!-- com.exclusively.web.sanity.Exclusively_Sanity_Scenarios -->
+    </classes>
+  </test> <!-- Build no-XXX test(failed) -->
+</suite> <!-- Failed suite [Exclusively_TestSuite] -->
