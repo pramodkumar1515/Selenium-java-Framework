@@ -34,6 +34,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.exclusively.web.common.jdbcConnectivity;
 
 
 public class CommonUtility extends jdbcConnectivity {
@@ -135,31 +136,63 @@ public class CommonUtility extends jdbcConnectivity {
 			String DRIVER_NAME=prop.getProperty("DRIVER");
 			System.out.println(DRIVER_NAME);
 			
-			switch(DRIVER_NAME)
-			{
-			case "CHROME":{
-							DRIVER_CLASS = prop.getProperty("DRIVER_CLASS");
-							String DRIVER_LOC = prop.getProperty("DRIVER_LOCATION");
-							//try{
-							System.setProperty(DRIVER_CLASS, DRIVER_LOC);
-							System.out.println("DRIVER_CLASS : " +DRIVER_CLASS );
-							System.out.println("DRIVER_LOC : " +DRIVER_LOC );
-							driver = new ChromeDriver();
-								} break;
-					
-			case "FIREFOX":{
-							System.out.println("Firefox driver is selected");
-							driver = new FirefoxDriver();		
-								} break;
+//			switch(DRIVER_NAME)
+//			{
+//			case "CHROME":{
+//							DRIVER_CLASS = prop.getProperty("DRIVER_CLASS");
+//							String DRIVER_LOC = prop.getProperty("DRIVER_LOCATION");
+//							//try{
+//							System.setProperty(DRIVER_CLASS, DRIVER_LOC);
+//							System.out.println("DRIVER_CLASS : " +DRIVER_CLASS );
+//							System.out.println("DRIVER_LOC : " +DRIVER_LOC );
+//							driver = new ChromeDriver();
+//								} break;
+//					
+//			case "FIREFOX":{
+//							System.out.println("Firefox driver is selected");
+//							driver = new FirefoxDriver();		
+//								} break;
+//			
+//			case "SAFARI":{
+//							System.out.println("Safari is Selected");
+//							driver = new SafariDriver();	
+//								}break;
+//			default:{
+//						System.out.println("Firefox driver is selected");
+//						driver = new FirefoxDriver();			
+//					}break;
+//			}
 			
-			case "SAFARI":{
-							System.out.println("Safari is Selected");
-							driver = new SafariDriver();	
-								}break;
-			default:{
-						System.out.println("Firefox driver is selected");
-						driver = new FirefoxDriver();			
-					}break;
+			if( DRIVER_NAME=="CHROME")
+			{
+				DRIVER_CLASS = prop.getProperty("DRIVER_CLASS");
+				String DRIVER_LOC = prop.getProperty("DRIVER_LOCATION");
+				//try{
+				System.setProperty(DRIVER_CLASS, DRIVER_LOC);
+				System.out.println("DRIVER_CLASS : " +DRIVER_CLASS );
+				System.out.println("DRIVER_LOC : " +DRIVER_LOC );
+				driver = new ChromeDriver();
+				
+			} else if(DRIVER_NAME=="FIREFOX")
+				
+			{
+				System.out.println("Firefox driver is selected");
+				driver = new FirefoxDriver();
+				
+			}else if (DRIVER_NAME=="SAFARI")
+			{
+				System.out.println("Safari is Selected");
+				driver = new SafariDriver();
+			}
+			else
+			{
+				DRIVER_CLASS = prop.getProperty("DRIVER_CLASS");
+				String DRIVER_LOC = prop.getProperty("DRIVER_LOCATION");
+				//try{
+				System.setProperty(DRIVER_CLASS, DRIVER_LOC);
+				System.out.println("DRIVER_CLASS : " +DRIVER_CLASS );
+				System.out.println("DRIVER_LOC : " +DRIVER_LOC );
+				driver = new ChromeDriver();
 			}
 			
 			
@@ -178,6 +211,10 @@ public class CommonUtility extends jdbcConnectivity {
 				
 				log.info("Success : Driver Initialized Successfully");
 			}
+			private void elseif(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
 			/*catch (Exception e) {
 				//e.printStackTrace();
 				//System.out.println("Fail : Driver Initialization Failed");

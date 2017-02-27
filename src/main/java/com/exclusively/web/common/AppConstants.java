@@ -4,7 +4,7 @@ public interface AppConstants {
 	
 /* ---Configurations Constants--- */
 	
-	public  final String SETUP_CONFIGFILE_LOCATION = "D:/Exclusively_Automation/Exclusively_selenium_test/ConfigFiles/common/SetUpConfig.properties";	
+	public  final String SETUP_CONFIGFILE_LOCATION = "//Users//ex//Selenium-java-Framework//ConfigFiles//common//SetUpConfig.properties";	
 
 	public  final String CONFIG_FILES_LOCATION = "CONFIG_FILES_LOCATION";
 	

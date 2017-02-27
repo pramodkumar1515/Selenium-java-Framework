@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.exclusively.web.common.AppConstants;
 import com.exclusively.web.login.util.ExclusivelyLogin_RegisteredUser_Util;
 

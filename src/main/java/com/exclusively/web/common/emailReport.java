@@ -36,7 +36,7 @@ public class emailReport {
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication("pramod.kumar03@exclusively.com", "ah@2305208606");
+                        return new PasswordAuthentication("pramodkumar1515@gmail.com", "as@2305208606");
                     }
                 });
 
@@ -46,12 +46,12 @@ public class emailReport {
             		+"Sanity Scenarios Covered: \n\n"
             		+ "1. Placing the Order end to end\n\n\n"
             		+"Regards :\n"
-            		+"Exclusively.com Automation Team"
+            		+"gofynd.com Automation Team"
             		);
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("pramod.kumar03@exclusively.com","Exclusively.com  QA Automation Team"));
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("pramod.kumar03@exclusively.com,goyal.ankur@exclusively.com,qa@exclusively.com,arjunkapoor@exclusively.com,jayant.yadav@exclusively.com,animesh@exclusively.com")
+                    InternetAddress.parse("pramodkumar1515@gmail.com,pramodkumar1515@hotmail.com,")
                     //InternetAddress.parse("pramod.kumar03@exclusively.com")
             		);
             message.setSubject("Web Automation Report!!");
@@ -60,7 +60,7 @@ public class emailReport {
 
             MimeBodyPart messageBodyPart = new MimeBodyPart();
             //String file = "D:\\Exclusively_Automation\\Exclusively_selenium_test\\test-output\\Exclusively_TestSuite";
-            String file = "D:\\Exclusively_Automation\\Exclusively_selenium_test\\test-output\\Exclusively_TestSuite\\Build no-XXX test.html";
+            String file = "//Users//ex//Selenium-java-Framework//test-output//emailable-report.html";
             String fileName = "Automation Report";
             DataSource source = new FileDataSource(file);
             messageBodyPart.setDataHandler(new DataHandler(source));

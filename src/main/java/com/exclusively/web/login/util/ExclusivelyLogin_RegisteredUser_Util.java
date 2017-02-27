@@ -13,9 +13,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.exclusively.web.common.AppConstants;
 
 import com.exclusively.web.common.CommonUtility;
-import com.exclusively.web.common.AppConstants;
 
 
 public class ExclusivelyLogin_RegisteredUser_Util extends CommonUtility {

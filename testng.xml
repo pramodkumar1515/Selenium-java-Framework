@@ -19,8 +19,8 @@
      
            
             <!-- Registration test Cases-->
-	         <class name="com.exclusively.web.login.Exclusively_Login" />
-	         <class name="com.exclusively.web.sanity.Exclusively_Sanity_Scenarios" />
+	         <class name="com.exclusively.web.sanity.Gofynd" />
+	         <!-- <class name="com.exclusively.web.sanity.Exclusively_Sanity_Scenarios" />-->
 	         
 	         
 		</classes>        
